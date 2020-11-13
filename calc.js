@@ -47,6 +47,7 @@ btn30.onclick = function perc30() {
   );
 };
 btnFinal.onclick = function final() {
+  var lucro = total30 - total18;
   alert(
     "Dolar : US$ " +
       dolar +
@@ -57,6 +58,8 @@ btnFinal.onclick = function final() {
       "\n\nValor com 18 % :  " +
       total18.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) +
       "\n\nValor total com 30 % de lucro : " +
-      total30.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+      total30.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) +
+      "\n\nLucro : " +
+      lucro.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
   );
 };
