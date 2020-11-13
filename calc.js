@@ -40,13 +40,14 @@ btn18.onclick = function perc18() {
   );
 };
 btn30.onclick = function perc30() {
-  valorPerc30 = total * 0.3;
-  total30 = total + valorPerc30;
+  valorPerc30 = total18 * 0.3;
+  total30 = total18 + valorPerc30;
   alert(
     total30.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
   );
 };
 btnFinal.onclick = function final() {
+  var lucro = total30 - total18;
   alert(
     "Dolar : US$ " +
       dolar +
@@ -57,6 +58,8 @@ btnFinal.onclick = function final() {
       "\n\nValor com 18 % :  " +
       total18.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) +
       "\n\nValor total com 30 % de lucro : " +
-      total30.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+      total30.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) +
+      "\n\nLucro : " +
+      lucro.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
   );
 };
