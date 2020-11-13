@@ -40,8 +40,8 @@ btn18.onclick = function perc18() {
   );
 };
 btn30.onclick = function perc30() {
-  valorPerc30 = total * 0.3;
-  total30 = total + valorPerc30;
+  valorPerc30 = total18 * 0.3;
+  total30 = total18 + valorPerc30;
   alert(
     total30.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
   );
