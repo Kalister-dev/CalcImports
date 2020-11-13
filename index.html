@@ -1,63 +1,65 @@
 <html>
-
-<head>
+  <head>
     <link rel="stylesheet" type="text/css" href="./style/style.css" />
     <meta charset="UTF-8" />
     <title>Calc Imports</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="box" id="calcBox">
-        <h1 id="titulo">Calc Imports</h1>
-        <div class="dolar" id="app">
-            <input type="number" name="dolar" id="idDolar" placeholder="Insira o valor do dolar" />
-            <button class="botao" id="btnId">+</button>
-        </div>
-        <div class="lista" id="listaItens">
-            <select id="item">
+      <h1 id="titulo">Calc Imports</h1>
+      <div class="dolar" id="app">
+        <input
+          type="number"
+          name="dolar"
+          id="idDolar"
+          placeholder="Insira o valor do dolar"
+        />
+        <button class="botao" id="btnId">+</button>
+      </div>
+      <div class="lista" id="listaItens">
+        <select id="item">
           <option value="Selecione item">Selecione um item</option>
-           <option value="166.00">XIAOMI NOTE 8 64GB - 4GB</option>
-            <option value="185.00">XAIOMI NOTE 8 PRO - 128GB - 6GB</option>
-             <option value="167.00">XIAOMI NOTE 9 64GB - 3GB</option>
-              <option value="178.00">XIAOMI NOTE 9 128GB - 4GB</option>
-               <option value="126.00">XIAOMI REDMI 8 - 64GB - 4GB</option>
-                <option value="136.00">XIAOMI REDMI 9 64GB - 4GB</option>
-                 <option value="117.00">XIAOMI REDMI 9C - 64GB - 2GB</option>
-                  <option value="101.00">XIAOMI REDMI 9A - 32GB - 2GB</option>
-                   <option value="256.00">XIAOMI NOTE 9 PRO - 128GB - 6GB</option>
-                    <option value="548.00">XIAOMI MI 10 - 128GB - 8GB</option>
-                     <option value="247.00">XIAOMI MI 9 LITE - 128GB - 6GB</option>
-                      <option value="126.00">XIAOMI REDMI 8 - 64GB - 4GB</option>
-                       <option value="136.00">XIAOMI REDMI 9 - 64GB - 4GB</option>
-                        <option value="155.00">IPHONE 6S PLUS - 16GB - 2GB</option>
-                         <option value="210.00">IPHONE 7 - 32GB - 2GB</option>
-                          <option value="325.00">IPHONE 7 PLUS - 128GB - 3GB</option>
-                           <option value="280.00">IPHONE 7 PLUS - 32GB - 3GB </option>
-                            <option value="250.00">IPHONE 8 - 64GB - 3GB</option>
-                             <option value="355.00">IPHONE 8 PLUS - 64GB - 3GB</option>
-                              <option value="495.00">IPHONE X - 256GB - 3GB</option>
-                               <option value="420.00">IPHONE X - 64GB - 3GB</option>
-                                <option value="490.00">IPHONE XR 128GB - 3GB</option>
-                                 <option value=" $417.00">IPHONE XR - 64GB - 3GB</option>
-                                  <option value=" $1.122.00">IPHONE 12 - 128GB - 4GB</option>
-                                   <option value="1215.00">IPHONE 12 - 256GB - 4GB </option>
-
+          <option value="166.00">XIAOMI NOTE 8 64GB - 4GB</option>
+          <option value="185.00">XAIOMI NOTE 8 PRO - 128GB - 6GB</option>
+          <option value="167.00">XIAOMI NOTE 9 64GB - 3GB</option>
+          <option value="178.00">XIAOMI NOTE 9 128GB - 4GB</option>
+          <option value="126.00">XIAOMI REDMI 8 - 64GB - 4GB</option>
+          <option value="136.00">XIAOMI REDMI 9 64GB - 4GB</option>
+          <option value="117.00">XIAOMI REDMI 9C - 64GB - 2GB</option>
+          <option value="101.00">XIAOMI REDMI 9A - 32GB - 2GB</option>
+          <option value="256.00">XIAOMI NOTE 9 PRO - 128GB - 6GB</option>
+          <option value="548.00">XIAOMI MI 10 - 128GB - 8GB</option>
+          <option value="247.00">XIAOMI MI 9 LITE - 128GB - 6GB</option>
+          <option value="126.00">XIAOMI REDMI 8 - 64GB - 4GB</option>
+          <option value="136.00">XIAOMI REDMI 9 - 64GB - 4GB</option>
+          <option value="155.00">IPHONE 6S PLUS - 16GB - 2GB</option>
+          <option value="210.00">IPHONE 7 - 32GB - 2GB</option>
+          <option value="325.00">IPHONE 7 PLUS - 128GB - 3GB</option>
+          <option value="280.00">IPHONE 7 PLUS - 32GB - 3GB</option>
+          <option value="250.00">IPHONE 8 - 64GB - 3GB</option>
+          <option value="355.00">IPHONE 8 PLUS - 64GB - 3GB</option>
+          <option value="495.00">IPHONE X - 256GB - 3GB</option>
+          <option value="420.00">IPHONE X - 64GB - 3GB</option>
+          <option value="490.00">IPHONE XR 128GB - 3GB</option>
+          <option value=" $417.00">IPHONE XR - 64GB - 3GB</option>
+          <option value=" $1.122.00">IPHONE 12 - 128GB - 4GB</option>
+          <option value="1215.00">IPHONE 12 - 256GB - 4GB</option>
         </select>
-            <button class="itemAdd" id="btnItem">+</button>
-        </div>
-        <div class="divValor">
-            <button class="ValorReal" id="real">Calcular valor real</button>
-        </div>
-        <div id="calc">
-            <button class="botao1" id="18%" value="0.18">18 %</button>
-            <button class="botao2" id="30%" value="0.3">30 %</button>
-        </div>
+        <button class="itemAdd" id="btnItem">+</button>
+      </div>
+      <div class="divValor">
+        <button class="ValorReal" id="real">Calcular valor real</button>
+      </div>
+      <div id="calc">
+        <button class="botao1" id="18%" value="0.18">18 %</button>
+        <button class="botao2" id="30%" value="0.3">30 %</button>
+      </div>
 
-        <div id="resultFinal">
-            <button class="botao3" id="final">Calcular Valor total</button>
-        </div>
-        <script src="./calc.js"></script>
+      <div id="resultFinal">
+        <button class="botao3" id="final">Calcular Valor total</button>
+      </div>
+      <script src="./calc.js"></script>
     </div>
-</body>
-
+  </body>
 </html>
